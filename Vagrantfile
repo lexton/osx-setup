@@ -13,13 +13,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--memory", "2048"]
   end
 
-  # Forward the Rails server default port to the host
+  # Forward port 8080 and early 4000 port range to host
   config.vm.network :forwarded_port, guest: 8080, host: 8080
-  config.vm.network :forwarded_port, guest: 8080, host: 8080
-  config.vm.network :forwarded_port, guest: 8080, host: 8080
-  config.vm.network :forwarded_port, guest: 8080, host: 8080
-  config.vm.network :forwarded_port, guest: 8080, host: 8080
+  config.vm.network :forwarded_port, guest: 4000, host: 4000
+  config.vm.network :forwarded_port, guest: 4001, host: 4001
+  config.vm.network :forwarded_port, guest: 4002, host: 4002
+  config.vm.network :forwarded_port, guest: 4003, host: 4003
+  config.vm.network :forwarded_port, guest: 4004, host: 4004
+  config.vm.network :forwarded_port, guest: 4005, host: 4005
   
+  # Install Docker, but nothing else
   config.vm.provision "docker"
   
 end
