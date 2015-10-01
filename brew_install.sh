@@ -26,7 +26,7 @@ brew cask install adium
 brew cask install slack
 
 # Because window management is the worst
-brew cask install bettertouchtool
+brew cask install bettersnaptool
 
 # Terminal Extensions
 brew cask install go2shell
