@@ -21,12 +21,13 @@ brew cask install cord
 # Install code management and communication tools
 brew cask install sourcetree
 
-brew cask install hipchat
-brew cask install adium
-brew cask install slack
+# Chat messengers, take your pick
+# brew cask install hipchat
+# brew cask install adium
+# brew cask install slack
 
 # Because window management is the worst
-brew cask install bettersnaptool
+brew cask install bettertouchtool
 
 # Terminal Extensions
 brew cask install go2shell
